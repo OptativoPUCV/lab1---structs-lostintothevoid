@@ -389,3 +389,16 @@ Fri 17 Mar 2023 12:27:05 PM UTC:
  tests:  4|3
 total_score: 40/70
 76fb31f
+Fri 17 Mar 2023 12:27:50 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:22: error: expected ‘;’ before ‘v’
+   94 |   printf("%i", valor)
+      |                      ^
+      |                      ;
+   95 |   v->datos[i]=valor;
+      |   ~                   
+Compilation failed
+e5f1030
