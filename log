@@ -74,3 +74,18 @@ exercises.c:16:7: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 791a1d4
+Fri 17 Mar 2023 11:45:18 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:16:10: error: stray ‘\342’ in program
+   16 |   if (*a ≠ *b){
+      |          ^
+exercises.c:16:14: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   16 |   if (*a ≠ *b){
+      |       ~~   ^
+      |       |
+      |       int
+Compilation failed
+ef040f9
