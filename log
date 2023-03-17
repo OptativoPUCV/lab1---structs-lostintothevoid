@@ -30,3 +30,22 @@ exercises.c:16:7: error: variable ‘basura’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 bf4308d
+Fri 17 Mar 2023 11:42:12 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:17:10: error: stray ‘\342’ in program
+   17 |   if (*a ≠ *b){
+      |          ^
+exercises.c:17:14: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   17 |   if (*a ≠ *b){
+      |       ~~   ^
+      |       |
+      |       int
+exercises.c:16:7: error: variable ‘basura’ set but not used [-Werror=unused-but-set-variable]
+   16 |   int basura;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+646ece8

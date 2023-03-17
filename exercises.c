@@ -14,7 +14,7 @@ intercambia los valores de las variables apuntadas por a y b.
 */
 void swap(int *a, int *b) {
   int basura;
-  if (*a <> *b){
+  if (*a ≠ *b){
     basura = *a;
     *a = *b;
     *b = *a;
