@@ -163,3 +163,22 @@ Fri 17 Mar 2023 11:57:20 AM UTC:
  tests:  2|5
 total_score: 20/70
 286b050
+Fri 17 Mar 2023 12:01:18 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:60:17: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   60 |   scanf("%c", &p.nombre);
+      |                 ^
+      |                 ->
+exercises.c:61:17: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   61 |   scanf("%c", &p.rut);
+      |                 ^
+      |                 ->
+exercises.c:62:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   62 |   scanf("%i", &edad);
+      |   ^~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+779733c
