@@ -287,3 +287,23 @@ Fri 17 Mar 2023 12:16:34 PM UTC:
  tests:  3|4
 total_score: 30/70
 5acf92e
+Fri 17 Mar 2023 12:18:48 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:80:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   80 |   Vector * vectorA->datos = (Vector *) malloc(n * sizeof(Vector ));
+      |                   ^~
+exercises.c:80:19: error: expected expression before ‘->’ token
+exercises.c:81:7: error: ‘vectorA’ undeclared (first use in this function); did you mean ‘Vector’?
+   81 |   if (vectorA==NULL) exit(EXIT_FAILURE);
+      |       ^~~~~~~
+      |       Vector
+exercises.c:81:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:84:1: error: control reaches end of non-void function [-Werror=return-type]
+   84 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7fcd7f6
