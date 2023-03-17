@@ -13,7 +13,7 @@ Programe la función void swap(int *a, int *b), la cual
 intercambia los valores de las variables apuntadas por a y b.
 */
 void swap(int *a, int *b) {
-  if (*a ≠ *b){
+  if (*a = *b!){
     int basura = *a;
     *a = *b;
     *b = basura;

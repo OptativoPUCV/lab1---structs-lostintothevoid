@@ -89,3 +89,18 @@ exercises.c:16:14: error: invalid operands to binary * (have ‘int’ and ‘in
       |       int
 Compilation failed
 ef040f9
+Fri 17 Mar 2023 11:45:44 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:16:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   16 |   if (*a = *b!){
+      |       ^
+exercises.c:16:14: error: expected ‘)’ before ‘!’ token
+   16 |   if (*a = *b!){
+      |      ~       ^
+      |              )
+cc1: all warnings being treated as errors
+Compilation failed
+2e99a96
