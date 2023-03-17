@@ -2,3 +2,17 @@ Thu 09 Mar 2023 03:54:22 PM UTC:
  tests:  0|7
 total_score: 0/70
 ef9b54b
+Fri 17 Mar 2023 11:41:07 AM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:17:11: error: expected expression before ‘<’ token
+   17 |   if (*a >< *b){
+      |           ^
+exercises.c:16:7: error: variable ‘basura’ set but not used [-Werror=unused-but-set-variable]
+   16 |   int basura;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9833c15
