@@ -63,3 +63,14 @@ exercises.c:16:7: error: variable ‘basura’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 57d505c
+Fri 17 Mar 2023 11:43:06 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:16:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   16 |   if (*a =! *b){
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+791a1d4
