@@ -115,3 +115,9 @@ exercises.c:16:8: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 0452fa8
+Fri 17 Mar 2023 11:47:03 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+57a1724
