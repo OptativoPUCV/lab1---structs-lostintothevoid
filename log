@@ -121,3 +121,17 @@ Fri 17 Mar 2023 11:47:03 AM UTC:
  tests:  1|6
 total_score: 10/70
 57a1724
+Fri 17 Mar 2023 11:53:14 AM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:35:20: error: expected ‘;’ before ‘}’ token
+   35 |         *min = a[i]
+      |                    ^
+      |                    ;
+   36 | 
+   37 |   }
+      |   ~                 
+Compilation failed
+984eaae
