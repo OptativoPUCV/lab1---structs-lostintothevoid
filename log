@@ -383,3 +383,9 @@ exercises.c:94:7: error: invalid type argument of ‘->’ (have ‘Vector’)
       |       ^~
 Compilation failed
 733a389
+Fri 17 Mar 2023 12:27:05 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+76fb31f
