@@ -135,3 +135,14 @@ exercises.c:35:20: error: expected ‘;’ before ‘}’ token
       |   ~                 
 Compilation failed
 984eaae
+Fri 17 Mar 2023 11:53:22 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:30:3: error: ‘i’ is used uninitialized in this function [-Werror=uninitialized]
+   30 |   for (int i; i<n ;i++){
+      |   ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d27501f
