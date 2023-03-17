@@ -77,7 +77,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector * vactorA = (Vector *) malloc(sizeof(Vector));
+  Vector * vectorA = (Vector *) malloc(sizeof(Vector));
   if ( vectorA==NULL) exit(EXIT_FAILURE);
   vectorA->datos = (Vector *) calloc(n, sizeof(Vector));
   if ( vectorA->datos==NULL) exit(EXIT_FAILURE);
