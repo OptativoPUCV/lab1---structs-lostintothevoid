@@ -244,3 +244,22 @@ exercises.c:62:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
       |    ->
 Compilation failed
 e12d80b
+Fri 17 Mar 2023 12:10:09 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:60:11: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   60 |   strcpy(p.nombre, nombre);
+      |           ^
+      |           ->
+exercises.c:61:11: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   61 |   strcpy(p.rut, rut);
+      |           ^
+      |           ->
+exercises.c:62:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   62 |   p.edad=edad;
+      |    ^
+      |    ->
+Compilation failed
+9f5b243
