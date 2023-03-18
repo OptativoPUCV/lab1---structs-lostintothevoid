@@ -556,3 +556,28 @@ exercises.c:93:44: note: expected ‘int *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 8b67e89
+Sat 18 Mar 2023 02:37:41 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+test.c: In function ‘test_asignarObtenerValor’:
+test.c:168:21: error: passing argument 2 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  168 |     asignarValor(v, 1, b);
+      |                     ^
+      |                     |
+      |                     int
+In file included from test.c:5:
+exercises.c:93:36: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int valor) {
+      |                               ~~~~~^
+test.c:169:21: error: passing argument 2 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  169 |     asignarValor(v, 2, c);
+      |                     ^
+      |                     |
+      |                     int
+In file included from test.c:5:
+exercises.c:93:36: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int valor) {
+      |                               ~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+09c40c4
