@@ -92,8 +92,8 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
   if (i>=0 && i< v->capacidad)
-    v->datos[i] = valor;
-  
+    valor = v->datos[i];
+    
 }
 
 /*
