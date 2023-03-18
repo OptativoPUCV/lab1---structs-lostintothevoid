@@ -425,3 +425,13 @@ exercises.c:95:9: error: ‘Vector’ has no member named ‘dato’; did you me
       |         datos
 Compilation failed
 ab044de
+Sat 18 Mar 2023 02:22:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:5: error: invalid type argument of unary ‘*’ (have ‘int’)
+   95 |     *v->datos[i]=valor;
+      |     ^~~~~~~~~~~~
+Compilation failed
+f3564a6
