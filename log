@@ -783,3 +783,26 @@ Sat 18 Mar 2023 02:47:49 PM UTC:
  tests:  4|3
 total_score: 40/70
 c64eded
+Sat 18 Mar 2023 03:03:13 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:10: error: invalid type argument of ‘->’ (have ‘Vector’)
+   81 |   vectorA->datos = (int *) calloc(n, sizeof(int));
+      |          ^~
+exercises.c:82:15: error: invalid type argument of ‘->’ (have ‘Vector’)
+   82 |   if ( vectorA->datos==NULL) exit(EXIT_FAILURE);
+      |               ^~
+exercises.c:83:10: error: invalid type argument of ‘->’ (have ‘Vector’)
+   83 |   vectorA->capacidad = n;
+      |          ^~
+exercises.c:84:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   84 |    return vectorA;
+      |           ^~~~~~~
+exercises.c:85:1: error: control reaches end of non-void function [-Werror=return-type]
+   85 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f45dee6
