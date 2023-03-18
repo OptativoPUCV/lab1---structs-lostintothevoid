@@ -642,3 +642,60 @@ exercises.c:93:36: note: expected ‘int *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 40b0ec4
+Sat 18 Mar 2023 02:40:35 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:20: error: array subscript is not an integer
+   94 |   *valor = v->datos[i];
+      |                    ^
+test.c: In function ‘test_asignarObtenerValor’:
+test.c:167:24: error: passing argument 3 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  167 |     asignarValor(v, 0, a);
+      |                        ^
+      |                        |
+      |                        int
+In file included from test.c:5:
+exercises.c:93:44: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int *valor) {
+      |                                       ~~~~~^~~~~
+test.c:168:21: error: passing argument 2 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  168 |     asignarValor(v, 1, b);
+      |                     ^
+      |                     |
+      |                     int
+In file included from test.c:5:
+exercises.c:93:36: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int *valor) {
+      |                               ~~~~~^
+test.c:168:24: error: passing argument 3 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  168 |     asignarValor(v, 1, b);
+      |                        ^
+      |                        |
+      |                        int
+In file included from test.c:5:
+exercises.c:93:44: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int *valor) {
+      |                                       ~~~~~^~~~~
+test.c:169:21: error: passing argument 2 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  169 |     asignarValor(v, 2, c);
+      |                     ^
+      |                     |
+      |                     int
+In file included from test.c:5:
+exercises.c:93:36: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int *valor) {
+      |                               ~~~~~^
+test.c:169:24: error: passing argument 3 of ‘asignarValor’ makes pointer from integer without a cast [-Werror=int-conversion]
+  169 |     asignarValor(v, 2, c);
+      |                        ^
+      |                        |
+      |                        int
+In file included from test.c:5:
+exercises.c:93:44: note: expected ‘int *’ but argument is of type ‘int’
+   93 | void asignarValor(Vector * v, int *i, int *valor) {
+      |                                       ~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+943b162
