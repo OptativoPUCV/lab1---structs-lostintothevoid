@@ -811,3 +811,14 @@ Sat 18 Mar 2023 03:03:31 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 15a2796
+Sat 18 Mar 2023 03:03:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:19: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   81 |   *vectorA->datos = (int *) calloc(n, sizeof(int));
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+aa815ba
