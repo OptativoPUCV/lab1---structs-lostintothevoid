@@ -414,3 +414,14 @@ Fri 17 Mar 2023 12:28:24 PM UTC:
  tests:  4|3
 total_score: 40/70
 a453479
+Sat 18 Mar 2023 02:21:54 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:9: error: ‘Vector’ has no member named ‘dato’; did you mean ‘datos’?
+   95 |     *v->dato[i]=valor;
+      |         ^~~~
+      |         datos
+Compilation failed
+ab044de
