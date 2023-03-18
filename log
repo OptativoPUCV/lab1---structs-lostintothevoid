@@ -765,3 +765,9 @@ exercises.c:93:36: note: expected ‘int *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 bad7e87
+Sat 18 Mar 2023 02:45:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+3982426
